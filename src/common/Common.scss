@@ -1,0 +1,53 @@
+$btn-green: #84d196;
+$btn-blue: #214172;
+body {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+  white-space: pre-wrap;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  border-radius: 7px;
+  &.btn--green {
+    border: 2px solid $btn-green;
+    background-color: $btn-green;
+    a {
+      color: white;
+    }
+    &:hover {
+      background-color: white;
+      transition: all 0.5s;
+      border: 2px solid $btn-green;
+      a {
+        color: $btn-green;
+      }
+    }
+  }
+  &.btn--blue {
+    border: 2px solid $btn-blue;
+    background-color: $btn-blue;
+    a {
+      color: white;
+    }
+    &:hover {
+      background-color: white;
+      transition: all 0.5s;
+      border: 2px solid $btn-blue;
+      a {
+        color: $btn-blue;
+      }
+    }
+  }
+}

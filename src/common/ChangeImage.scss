@@ -1,0 +1,23 @@
+.footer {
+  background-color: #eee;
+  ul {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0 15px;
+      img {
+        width: 150px;
+        height: 150px;
+        transition: all 0.7s;
+        transform: scale(1);
+        &:hover {
+          transition: all 0.7s;
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  height: 130px;
+  background-image: url('../../public/images/bg.gif');
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 300;
+  .header-logo {
+    img {
+      position: absolute;
+      width: 115px;
+      height: 115px;
+      top: 5px;
+      left: 20px;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    margin-right: 45px;
+    li {
+      margin: 22px 20px;
+      a {
+        font-size: 18px;
+        padding: 10px 23px;
+        border-radius: 20px;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #ddd;
+          color: white;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
